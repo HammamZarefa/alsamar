@@ -126,7 +126,7 @@
 
 .vlt-is--homepage-05 .vlt-header--default .vlt-navbar,
 .vlt-is--homepage-05 .vlt-header--default .vlt-navbar.vlt-navbar--solid {
-	background-color: #57411b;
+	background-color: #3c594fbf;
 }
 
 .vlt-is--homepage-11 .vlt-navbar {
@@ -207,4 +207,45 @@
     .tx-ce{
         text-align: center;
     }
+}
+.whats{
+	position: fixed;
+	bottom: 20px;
+	left: 20px;
+	z-index: 10000;
+}
+.whats a{
+	font-size: 20px;
+	line-height: 1;
+	position: fixed;
+	z-index: 5;
+	left: 30px;
+	bottom: 30px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	width: 50px;
+	height: 50px;
+	padding: 0;
+	border-radius: 50%;
+	-webkit-box-shadow: 0 1px 3px 0 rgba(11,11,11,.1);
+	box-shadow: 0 1px 3px 0 rgba(11,11,11,.1);
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	color: #fff;
+background-color: #EEBC69;
+}
+.whats a:hover{
+	background-color: #3c594f;
+}
+.vlt-demo-item__image img{
+	width: 350px;
+	height: 200px;
 }
