@@ -1,0 +1,74 @@
+body{
+    font-size: 18px !important;
+    text-align: start;
+   
+}
+body a,body h1,body h2,body h3,body h4,body h5,body span,body div,body li,body p{
+    font-family: 'Alegreya', serif;
+    font-family: 'Amiri', serif;
+    font-family: 'Caveat', cursive;
+    font-family: 'Courgette', cursive;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Tajawal', sans-serif !important;
+}
+.vlt-default-navigation .sf-menu > li > a{
+    font-size: 18px !important;
+}
+.tp-simpleresponsive > ul > li{
+    direction: ltr !important;
+}
+.cbp-filter-item,.vlt-btn,.vlt-portfolio-item-meta-category,.menu li {
+    font-size: 18px !important;
+}
+.vlt-demo-core-features-list{
+    font-size: 25px !important;
+}
+p{
+    font-size: 20px;
+}
+.vlt-widget__title--white{
+    font-size: 25px !important;
+}
+.vlt-social-icon--style-2:last-of-type{
+    margin-right: 18px !important;
+}
+.vlt-single-product-summary{
+    text-align: start;
+}
+table {
+    text-align: right;
+  }
+  .vlt-single-product-tabs .vlt-panel--additional_information table td {
+    text-align: left;
+  }
+.vlt-review-header{
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: self-start !important;
+}
+.vlt-review-item__inner .vlt-review-content .vlt-review-header .vlt-star-rating {
+    left: 0 !important;
+}
+.vlt-review-text{
+    text-align: start !important;
+}
+@media (min-width: 768px){ 
+.offset-md-3 {
+  margin-left: 0 !important;
+  margin-right: 25% !important;
+}
+.offset-md-2 {
+    margin-left: 0 !important;
+    margin-right: 16.666667% !important;
+  }
+.offset-md-1 {
+    margin-left: 0 !important;
+    margin-right: 8.333333% !important;
+  }
+}
+@media (max-width: 568px){ 
+    .vlt-cubeportfolio-filters .cbp-filter-item + .cbp-filter-item {
+        margin-inline-start: 0 !important;
+      }
+    }
+    

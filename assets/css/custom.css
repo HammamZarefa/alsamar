@@ -124,10 +124,6 @@
 	background-color: #fff;
 }
 
-.vlt-is--homepage-05 .vlt-header--default .vlt-navbar,
-.vlt-is--homepage-05 .vlt-header--default .vlt-navbar.vlt-navbar--solid {
-	background-color: #3c594fbf;
-}
 
 .vlt-is--homepage-11 .vlt-navbar {
 	padding: 0 35px;
@@ -248,4 +244,13 @@ background-color: #EEBC69;
 .vlt-demo-item__image img{
 	width: 350px;
 	height: 200px;
+}
+.con-header{
+	position: fixed;
+	top: 0;
+	z-index: 99;
+	width: 100%;
+}
+.vlt-footer {
+	background-color: #000;
 }
