@@ -27,12 +27,14 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@500&family=Amiri:ital@1&family=Caveat:wght@700&family=Courgette&family=Dancing+Script:wght@700&family=Tajawal:wght@500&display=swap" rel="stylesheet"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@500&family=Amiri:ital@1&family=Caveat:wght@700&family=Courgette&family=Dancing+Script:wght@700&family=Tajawal&display=swap" rel="stylesheet"> 
 </head>
 
 <body>
 	<!--Preloader-->
 	<div class="vlt-site-preloader">
-		<div class="image"><img src="assets/img/root/preloader.gif" alt=""></div>
+		<div class="image"><img src="assets/img/root/LOGO.png" alt="" style="width:200px;height: 200px;"></div>
 	</div>
 	<!-- sticky wahtsapp button -->
 	<div class="whats">
@@ -57,27 +59,21 @@
 										<nav class="vlt-default-navigation">
 											<!--Menu-->
 											<ul class="sf-menu">
-												<li class="menu-item-has-children two-columns"><a href="#Home"><span>Home</span></a>
+												<li class="menu-item-has-children two-columns"><a href="index.html"><span>Home</span></a>
 												</li>
-												<li class="menu-item-has-children"><a href="#About"><span>About</span></a>
+												<li class="menu-item-has-children"><a class="about-us" href="about-us.html"><span>About</span></a>
 													<ul class="sub-menu">
 														<li><a class="d-flex justify-content-center" href="about-us.html"><span>About Us</span></a>
 														</li>
 													</ul>
 												</li>
-												<li class="menu-item-has-children"><a href="#Portfolio"><span>Products</span></a>	
+												<li class="menu-item-has-children"><a href="products.html"><span>Products</span></a>	
 													<ul class="sub-menu">
 														<li><a class="d-flex justify-content-center" href="products.html"><span>Products</span></a>
 														</li>
 													</ul>
 												</li>
-												<li class="menu-item-has-children"><a href="#Vlaues"><span>Vlaues</span></a>										
-												</li>
-												<li class="menu-item-has-children"><a href="#Message"><span>Message</span></a>
-												</li>
-												<li class="menu-item-has-children left"><a href="#vision"><span>vision</span></a>
-												</li>
-												<li class="menu-item-has-children"><a href="#Portfolio"><i class="fa fa-globe fa-2x"></i></a>	
+												<li class="menu-item-has-children"><a href="" class="d-flex align-items-center">Languages <i class="fa fa-globe fa-2x" style="margin-inline-start: 5px;"></i></a>	
 													<ul class="sub-menu">
 														<li><a class="d-flex justify-content-center" href="index.html"><span>English</span></a>
 														<li><a class="d-flex justify-content-center" href="index-ar.html"><span>Arabic</span></a>
@@ -113,9 +109,9 @@
 						<div class="container">
 							<!--Menu-->
 							<ul class="sf-menu">
-								<li class="menu-item-has- two-columns"><a href="#Home"><span>Home</span></a>
+								<li class="menu-item-has- two-columns"><a href="index.html"><span>Home</span></a>
 								</li>
-								<li class="menu-item-has-children"><a href="#"><span>About</span></a>
+								<li class="menu-item-has-children"><a class="about-us" href=""><span>About</span></a>
 									<ul class="sub-menu">
 										<li><a href="about-us.html"><span>About Us</span></a>
 										</li>
@@ -126,12 +122,6 @@
 										<li><a href="products.html"><span>Products</span></a>
 										</li>
 									</ul>
-								</li>
-								<li class="menu-item-has-"><a href="#Vlaues"><span>Vlaues</span></a>
-								</li>
-								<li class="menu-item-has-"><a href="#Message"><span>Message</span></a>
-								</li>
-								<li class="menu-item-has- left"><a href="#vision"><span>Vision</span></a>
 								</li>
 								<li class="menu-item-has-children"><a href=""><i class="fa fa-globe fa-2x"></i></a>	
 									<ul class="sub-menu">
@@ -404,7 +394,7 @@
 					</div>
 				</section>
 				<!--Video 03-->
-				<section class="jarallax" id="vision"><img class="jarallax-img" src="assets/img/attachment-73.jpg" alt="">
+				<section class="jarallax" id="vision">
 					<div class="jarallax-overlay" style="background-color: rgba(12,12,12,0.5);"></div>
 					<h3 style="color: #fff;text-align: center;padding-top: 20px;margin: 0;">Vision</h3>
 					<div class="vlt-gap-60"></div>
@@ -609,7 +599,6 @@
 					marker.setAnimation(google.maps.Animation.BOUNCE);
 				}
 			}
-
 		})(jQuery);
 	</script>
 </body>
