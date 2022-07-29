@@ -52,6 +52,9 @@ table {
 .vlt-review-text{
     text-align: start !important;
 }
+.vlt-services--left .vlt-services__icon {
+    float: right !important;
+  }
 @media (min-width: 768px){ 
 .offset-md-3 {
   margin-left: 0 !important;
