@@ -33,7 +33,7 @@
                       <div class="row no-gutters align-items-center">
                         <div class="col mr-2">
                           <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Services</div>
-                          <div class="h5 mb-0 font-weight-bold text-gray-800">{{ $team }}</div>
+                          <div class="h5 mb-0 font-weight-bold text-gray-800">{{ $service }}</div>
                         </div>
                         <div class="col-auto">
                           <i class="fas fa-user fa-2x text-gray-300"></i>
@@ -51,7 +51,7 @@
                       <div class="row no-gutters align-items-center">
                         <div class="col mr-2">
                           <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Products</div>
-                          <div class="h5 mb-0 font-weight-bold text-gray-800">{{ $portfolio }}</div>
+                          <div class="h5 mb-0 font-weight-bold text-gray-800">{{ $product }}</div>
                         </div>
                         <div class="col-auto">
                           <i class="fas fa-table fa-2x text-gray-300"></i>
@@ -67,8 +67,8 @@
                     <div class="card-body">
                       <div class="row no-gutters align-items-center">
                         <div class="col mr-2">
-                          <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Page</div>
-                          <div class="h5 mb-0 font-weight-bold text-gray-800">{{ $page }}</div>
+                          <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Categories</div>
+                          <div class="h5 mb-0 font-weight-bold text-gray-800">{{ $pcategory }}</div>
                         </div>
                         <div class="col-auto">
                           <i class="fas fa-table fa-2x text-gray-300"></i>

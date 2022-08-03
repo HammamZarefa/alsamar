@@ -169,7 +169,7 @@
         </section>
         <section id="Vlaues" class="jarallax"><img class="jarallax-img" src="{{asset('front/img/landing/leedo-pages-collage.jpg')}}" alt="">
             <div class="jarallax-overlay" style="background-color: #3c594f;"></div>
-            <h3 style="color: #fff;text-align: center;padding-top: 20px;">Responsibility</h3>
+            <h3 style="color: #fff;text-align: center;padding-top: 20px;">@lang('Our Services')</h3>
             <div class="vlt-gap-60"></div>
             <div class="container">
                 <div class="row">
@@ -221,7 +221,7 @@
         <!--Video 03-->
         <section class="jarallax" id="vision">
             <div class="jarallax-overlay" style="background-color: rgba(12,12,12,0.5);"></div>
-            <h3 style="color: #fff;text-align: center;padding-top: 20px;margin: 0;">Vision</h3>
+            <h3 style="color: #fff;text-align: center;padding-top: 20px;margin: 0;">@lang('Vision')</h3>
             <div class="vlt-gap-60"></div>
             <div class="container">
                 <div class="row">

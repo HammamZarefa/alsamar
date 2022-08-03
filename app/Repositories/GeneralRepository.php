@@ -7,6 +7,9 @@ use App\Http\Requests\General\GeneralRequest;
 use App\Models\About\About;
 use App\Models\General\General;
 use App\Models\Page\Page;
+use App\Models\Pcategory\Pcategory;
+use App\Models\Portfolio\Portfolio;
+use App\Models\Service\Service;
 use App\Repositories\Interfaces\GeneralRepositoryInterface;
 use Illuminate\Http\Request;
 use App\Models\Post\Post;
@@ -19,20 +22,20 @@ class GeneralRepository implements GeneralRepositoryInterface
 {
 
     private $request;
-    private $post;
-    private $page;
+    private $service;
+    private $product;
     private $user;
-    private $team;
+    private $pacategory;
     private $about;
     private $general;
 
-    public function __construct(General $general, User $user, Team $team, Page $page, Post $post, About $about, Request $request)
+    public function __construct(General $general, User $user, Service $service, Portfolio $product, Pcategory $pacategory, About $about, Request $request)
     {
         $this->request = $request;
-        $this->post = $post;
-        $this->page = $page;
+        $this->service = $service;
+        $this->product = $product;
         $this->user = $user;
-        $this->team = $team;
+        $this->pacategory = $pacategory;
         $this->about = $about;
         $this->general = $general;
     }
@@ -40,11 +43,11 @@ class GeneralRepository implements GeneralRepositoryInterface
     public function dashboard()
     {
         $admin = $this->user->count();
-        $team = $this->team->count();
-        $blog = $this->post->count();
-        $page = $this->page->count();
+        $service = $this->service->count();
+        $pcategory = $this->pacategory->count();
+        $product = $this->product->count();
         $general = $this->general->find(1);
-        return view('admin.dashboard', compact('admin', 'blog', 'page', 'team','general'));
+        return view('admin.dashboard', compact('admin', 'service', 'pcategory', 'product','general'));
     }
 
     public function general()
