@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Auth;
 
 
 Route::get('/', [FrontController::class, 'home'])->name('homepage');
-Route::post('/', [FrontController::class, 'subscribe'])->name('subscribe');
+Route::get('subscribe', [FrontController::class, 'subscribe'])->name('subscribe');
 Route::get('about-us', [FrontController::class, 'about'])->name('about');
 Route::get('contact-us', [FrontController::class, 'contact'])->name('contact');
 Route::get('testimonials', [FrontController::class, 'testi'])->name('testi');
@@ -33,6 +33,7 @@ Route::get('blog/{slug}', [FrontController::class, 'blogshow'])->name('blogshow'
 Route::get('categories/{category:slug}',[FrontController::class, 'category'])->name('category');
 Route::get('tags/{tag:slug}',[FrontController::class, 'tag'])->name('tag');
 Route::get('pages/{slug}', [FrontController::class, 'page'])->name('page');
+Route::post('sendmail', [FrontController::class, 'sendMail'])->name('sendmail');
 
 Auth::routes([
     'register' => false
