@@ -20,6 +20,8 @@ use App\Models\Page\Page;
 use App\Models\Team\Team;
 use App\Models\Category\Category;
 use App\Models\Product\Product;
+use Mail;
+use Throwable;
 
 class FrontController extends Controller
 {
@@ -351,21 +353,46 @@ class FrontController extends Controller
 
     public function subscribe(Request $request)
     {
-        \Validator::make($request->all(), [
-            "email" => "required|unique:subscribers,email",
-        ])->validate();
 
-        $subs = new Subscriber();
-        $subs->email = $request->email;
-        if ( $subs->save()) {
+        try {
+            Mail::send('subscribe',
+                array(
+                    'email' => $request->get('EMAIL'),
+                ), function ($message) use ($request) {
+                    $message->from(env('MAIL_FROM_ADDRESS'));
+                    $message->to(env('MAIL_FROM_ADDRESS'));
+                });
+            return back()->with('success', 'Thank you for subscribe!');
 
-            return redirect()->route('homepage')->with('success', 'You have successfully subscribed');
+        } catch (Throwable $e) {
 
-        } else {
+            report($e);
+            return back()->with('error', 'Please Try again later!');
 
-            return redirect()->back();
 
         }
+    }
+    public function sendMail(Request $request)
+    {
+        try {
+            Mail::send('contact_email',
+            array(
+                'name' => $request->get('name'),
+                'email' => $request->get('email'),
+                'subject' => $request->get('title'),
+                'phone_number' => $request->get('phone'),
+                'user_message' => $request->get('message'),
+            ), function ($message) use ($request) {
+                $message->from($request->email);
+                $message->to(env('MAIL_FROM_ADDRESS'));
+            });
+            return back()->with('success', 'Thank you for contact us!');
+
+    } catch (Throwable $e) {
+
+            report($e);
+            return back()->with('error', 'Please Try again later!');
+}
     }
 
 }
