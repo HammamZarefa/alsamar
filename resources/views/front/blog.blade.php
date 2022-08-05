@@ -329,6 +329,86 @@ Blog -
             </div>
         </div>
     </section><!-- End Blog Section -->
-
+	<!--&&&&&&&&&&&&&&&&&&&&&& STart Blog Home Page &&&&&&&&&&&&&&&&&&&& -->
+    <section>
+						<div class="container-fluid p-0">
+							<div class="row no-gutters">
+								<div class="col-sm-12">
+								<h3 style="color: #3c594f;text-align: center;padding-top: 20px;">Blog</h3>
+								</div>
+								<div class="vlt-gap-120"></div>
+								<div class="col-md-3">
+									<!--Animation Block-->
+									<div class="vlt-animation-block" data-aos="fade" data-aos-delay="0">
+										<!--Team Member-->
+										<div class="vlt-team-member vlt-team-member--style-2">
+											<div class="vlt-team-member__avatar"><img src="{{asset('front/img/blog-1.jpg')}}" alt="">
+											</div>
+											<div class="vlt-team-member__info">
+												<h4>Patricia Parsons
+												</h4>
+												<a href="blog-list.html">
+													Read More
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<!--Animation Block-->
+									<div class="vlt-animation-block" data-aos="fade" data-aos-delay="100">
+										<!--Team Member-->
+										<div class="vlt-team-member vlt-team-member--style-2">
+											<div class="vlt-team-member__avatar"><img src="{{asset('front/img/blog-2.jpg')}}" alt="">
+											</div>
+											<div class="vlt-team-member__info">
+												<h4>Paul O’Brien
+												</h4>
+												<a href="blog-list.html">
+													Read More
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<!--Animation Block-->
+									<div class="vlt-animation-block" data-aos="fade" data-aos-delay="200">
+										<!--Team Member-->
+										<div class="vlt-team-member vlt-team-member--style-2">
+											<div class="vlt-team-member__avatar"><img src="{{asset('front/img/blog-3.jpg')}}" alt="">
+											</div>
+											<div class="vlt-team-member__info">
+												<h4>Victoria Floyd
+												</h4>
+												<a href="blog-list.html">
+													Read More
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<!--Animation Block-->
+									<div class="vlt-animation-block" data-aos="fade" data-aos-delay="300">
+										<!--Team Member-->
+										<div class="vlt-team-member vlt-team-member--style-2">
+											<div class="vlt-team-member__avatar"><img src="{{asset('front/img/blog-4.jpg')}}" alt="">
+											</div>
+											<div class="vlt-team-member__info">
+												<h4>Joseph Bridges
+												</h4>
+												<a href="blog-list.html">
+													Read More
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="vlt-gap-120"></div>
+					</section>
+					<!--&&&&&&&&&&&&&&&&&&&&&& End Blog Home Page   &&&&&&&&&&&&&&&&&&&&7 -->
   </main><!-- End #main -->
 @endsection

@@ -254,3 +254,9 @@ background-color: #EEBC69;
 .vlt-footer {
 	background-color: #000;
 }
+#vlt-logo{
+	text-align: left;
+}
+#vlt-mobile-menu{
+text-align: right;
+}

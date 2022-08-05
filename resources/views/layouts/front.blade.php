@@ -109,12 +109,12 @@
                 <nav class="vlt-navbar vlt-navbar--mobile">
                     <div class="container">
                         <div class="vlt-navbar-inner no-gutters">
-                            <div class="col text-left">
+                            <div class="col" id="vlt-navbar-logo">
                                 <!--Logo--><a class="vlt-navbar-logo" href="/"><img
                                             src="{{ asset('storage/'.$general->logo) }}" alt=""
                                             style="width: 100PX;"></a>
                             </div>
-                            <div class="col text-right"><a class="vlt-menu-burger" href="#" id="vlt-mobile-menu-toggle"><span
+                            <div id="vlt-mobile-menu" class="col"><a class="vlt-menu-burger" href="#" id="vlt-mobile-menu-toggle"><span
                                             class="line line-one"><span></span></span><span
                                             class="line line-two"><span></span></span><span
                                             class="line line-three"><span></span></span></a></div>

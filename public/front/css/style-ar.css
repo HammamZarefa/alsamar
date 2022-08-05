@@ -74,4 +74,9 @@ table {
         margin-inline-start: 0 !important;
       }
     }
-    
+#vlt-logo{
+    text-align: right !important;
+}
+#vlt-mobile-menu{
+text-align: left !important;
+}
