@@ -189,7 +189,7 @@
 											<li><a href="#">Inspiration</a> (3)</li>
 										</ul>
 									</div>
-								
+
 									<!--Widget-->
 									<div class="vlt-widget vlt-widget-tag-cloud">
 										<h5 class="vlt-widget__title">Tags</h5>

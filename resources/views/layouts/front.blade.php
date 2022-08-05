@@ -183,7 +183,7 @@
                                 <li><a href="{{route('about')}}">@lang('About Us')</a></li>
                                 <!--<li><a href="#">Our Services</a></li>-->
                                 <li><a href="{{route('products')}}">@lang('Products')</a></li>
-                                <!--<li><a href="#">News</a></li>-->
+                               <li><a href="{{route('blog')}}">@lang('Blog')</a></li>
                                 <li><a href="{{route('contact')}}">@lang('Contact Us')</a></li>
                                 <!--<li><a href="#">Shop</a></li>-->
                             </ul>

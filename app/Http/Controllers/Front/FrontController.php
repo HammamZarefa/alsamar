@@ -383,7 +383,7 @@ class FrontController extends Controller
                 'phone_number' => $request->get('phone'),
                 'user_message' => $request->get('message'),
             ), function ($message) use ($request) {
-                $message->from($request->email);
+                $message->from(env('MAIL_FROM_ADDRESS'));
                 $message->to(env('MAIL_FROM_ADDRESS'));
             });
             return back()->with('success', 'Thank you for contact us!');
