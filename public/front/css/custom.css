@@ -254,6 +254,13 @@ background-color: #EEBC69;
 .vlt-footer {
 	background-color: #000;
 }
+.vlt-team-member a:hover{
+	text-decoration: underline;
+}
+.vlt-team-member__avatar img{
+	width: 100%;
+	min-height: 225px;
+}
 #vlt-logo{
 	text-align: left;
 }

@@ -45,7 +45,7 @@
                         <h1 class="tp-caption" id="slide-5-layer-1" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-60','-60','-60','-100']" data-fontsize="['58','58','58','38']" data-lineheight="['70','70','70','50']" data-width="['501','501','501','430']" data-height="none" data-whitespace="normal" data-type="text" data-responsive_offset="off" data-responsive="off" data-frames="[{&quot;delay&quot;:500,&quot;speed&quot;:500,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:-50px;opacity:0;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;opacity:0;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]" data-textalign="['center','center','center','center']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 7; min-width: 501px; max-width: 501px; white-space: normal; font-size: 58px; line-height: 70px; font-weight: 700; color: #ffffff; letter-spacing: 0px;font-family: 'Dancing Script', cursive;text-transform:uppercase;">
                             {{$banner[0]->title}}
                         </h1>
-                        <h3 style="position: absolute;z-index: 10;color: #fff;right: 20%;bottom: 35%;;width: 60%;font-family: 'Dancing Script', cursive;text-transform:uppercase;text-align:center">
+                        <h3 style="position: absolute;z-index: 10;color: #fff;right: 0;bottom: 30%;width: 100%;font-family: 'Dancing Script', cursive;text-transform: uppercase;text-align: center;">
                         this text this text this text this text this text
                         </h3>
                         {{--<br><h2>{{$banner[0]->desc}}</h2>--}}
@@ -182,7 +182,8 @@
                         <div class="vlt-animation-block" data-aos="fade" data-aos-delay="0">
                             <ul class="vlt-demo-core-features-list d-flex justify-content-around flex-wrap">
                                 @foreach($services as $service)
-                                    <li class="mb-2"><img src="{{ asset('storage/'.$service->icon) }}" style="width: 20px">{{$service->title}}</li>
+                                    <li class="mb-2">
+                                        <img src="{{ asset('storage/'.$service->icon) }}" style="width: 20px;margin-inline-end: 10px;">{{$service->title}}</li>
                                 @endforeach
                             </ul>
                         </div>
@@ -244,6 +245,87 @@
             </div>
             <div class="vlt-gap-120"></div>
         </section>
+        	<!--&&&&&&&&&&&&&&&&&&&&&& STart Blog Home Page &&&&&&&&&&&&&&&&&&&& -->
+    <section>
+						<div class="container-fluid p-0">
+							<div class="row no-gutters">
+								<div class="col-sm-12">
+								<h3 style="color: #3c594f;text-align: center;padding-top: 20px;">Blog</h3>
+								</div>
+								<div class="vlt-gap-120"></div>
+								<div class="col-md-3">
+									<!--Animation Block-->
+									<div class="vlt-animation-block" data-aos="fade" data-aos-delay="0">
+										<!--Team Member-->
+										<div class="vlt-team-member vlt-team-member--style-2">
+											<div class="vlt-team-member__avatar"><img src="{{asset('front/img/blog-1.jpg')}}" alt="">
+											</div>
+											<div class="vlt-team-member__info">
+												<h4>Patricia Parsons
+												</h4>
+												<a href="{{route('blog')}}">
+													Read More
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<!--Animation Block-->
+									<div class="vlt-animation-block" data-aos="fade" data-aos-delay="100">
+										<!--Team Member-->
+										<div class="vlt-team-member vlt-team-member--style-2">
+											<div class="vlt-team-member__avatar"><img src="{{asset('front/img/blog-2.jpg')}}" alt="">
+											</div>
+											<div class="vlt-team-member__info">
+												<h4>Paul O’Brien
+												</h4>
+												<a href="{{route('blog')}}">
+													Read More
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<!--Animation Block-->
+									<div class="vlt-animation-block" data-aos="fade" data-aos-delay="200">
+										<!--Team Member-->
+										<div class="vlt-team-member vlt-team-member--style-2">
+											<div class="vlt-team-member__avatar"><img src="{{asset('front/img/blog-3.jpg')}}" alt="">
+											</div>
+											<div class="vlt-team-member__info">
+												<h4>Victoria Floyd
+												</h4>
+												<a href="{{route('blog')}}">
+													Read More
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<!--Animation Block-->
+									<div class="vlt-animation-block" data-aos="fade" data-aos-delay="300">
+										<!--Team Member-->
+										<div class="vlt-team-member vlt-team-member--style-2">
+											<div class="vlt-team-member__avatar"><img src="{{asset('front/img/blog-4.jpg')}}" alt="">
+											</div>
+											<div class="vlt-team-member__info">
+												<h4>Joseph Bridges
+												</h4>
+												<a href="{{route('blog')}}">
+													Read More
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="vlt-gap-120"></div>
+					</section>
+					<!--&&&&&&&&&&&&&&&&&&&&&& End Blog Home Page   &&&&&&&&&&&&&&&&&&&&7 -->
         <!--Contact Us 02-->
         <section id="Contact" class="jarallax"><img class="jarallax-img" src="{{asset('front/img/attachment-06.jpg')}}" alt="">
             <div class="jarallax-overlay" style="background-color: #3C594F;"></div>
@@ -255,7 +337,7 @@
                             <!--Animation Block-->
                             <div class="vlt-animation-block" data-aos="fade" data-aos-delay="0">
                                 <!--Section Title-->
-                                <div class="vlt-section-title text-left">
+                                <div class="vlt-section-title">
                                     <h2 style="color:#fff;">@lang('Get in Touch').
                                     </h2>
                                 </div>
