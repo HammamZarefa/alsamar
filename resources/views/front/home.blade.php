@@ -43,7 +43,11 @@
                         <div class="tp-caption tp-resizeme rs-parallaxlevel-4" id="slide-5-layer-5" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-width="full-proportional" data-height="full-proportional" data-whitespace="nowrap" data-type="image" data-basealign="slide" data-responsive_offset="on" data-frames="[{&quot;delay&quot;:10,&quot;speed&quot;:300,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;opacity:0;&quot;,&quot;to&quot;:&quot;o:0.5;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;opacity:0;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]" data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 5;"><img src="{{asset('front/img/slider/homepage-05/01.jpg')}}" alt="" data-ww="['full-proportional','full-proportional','full-proportional','full-proportional']" data-hh="['full-proportional','full-proportional','full-proportional','full-proportional']" data-no-retina=""></div>
                         <!-- LAYER NR. 5-->
                         <h1 class="tp-caption" id="slide-5-layer-1" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-60','-60','-60','-100']" data-fontsize="['58','58','58','38']" data-lineheight="['70','70','70','50']" data-width="['501','501','501','430']" data-height="none" data-whitespace="normal" data-type="text" data-responsive_offset="off" data-responsive="off" data-frames="[{&quot;delay&quot;:500,&quot;speed&quot;:500,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:-50px;opacity:0;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;opacity:0;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]" data-textalign="['center','center','center','center']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 7; min-width: 501px; max-width: 501px; white-space: normal; font-size: 58px; line-height: 70px; font-weight: 700; color: #ffffff; letter-spacing: 0px;font-family: 'Dancing Script', cursive;text-transform:uppercase;">
-                            {{$banner[0]->title}}</h1>
+                            {{$banner[0]->title}}
+                        </h1>
+                        <h3 style="position: absolute;z-index: 10;color: #fff;right: 20%;bottom: 35%;;width: 60%;font-family: 'Dancing Script', cursive;text-transform:uppercase;text-align:center">
+                        this text this text this text this text this text
+                        </h3>
                         {{--<br><h2>{{$banner[0]->desc}}</h2>--}}
                     </li>
                 </ul>
@@ -305,7 +309,7 @@
             <div class="vlt-gap-120"></div>
         </section>
         <!--Google Map 03-->
-        <div id="map" style="height: 500px;"></div>
+        <!-- <div id="map" style="height: 500px;"></div> -->
     </main>
     <!--Back to Top--><a class="vlt-btn vlt-btn--secondary vlt-btn--effect vlt-btn--go-top hidden" href="#"><span><i class="leedo-chevron-up"></i></span></a>
     </div>
