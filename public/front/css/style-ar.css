@@ -74,6 +74,13 @@ table {
         margin-inline-start: 0 !important;
       }
     }
+.vlt-team-member a:hover{
+    text-decoration: underline;
+}
+.vlt-team-member__avatar img{
+    width: 100%;
+    min-height: 225px;
+}
 #vlt-logo{
     text-align: right !important;
 }
