@@ -71,21 +71,21 @@
         </li>
 
     {{--<!-- Nav Item - Pages Collapse Menu -->--}}
-        {{--<li class="nav-item">--}}
-            {{--<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"--}}
-               {{--aria-expanded="true" aria-controls="collapseTwo">--}}
-                {{--<i class="fas fa-fw fa-table"></i>--}}
-                {{--<span>Blog</span>--}}
-            {{--</a>--}}
-            {{--<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">--}}
-                {{--<div class="bg-white py-2 collapse-inner rounded">--}}
-                    {{--<a class="collapse-item" href="{{ route('admin.post') }}">Blog</a>--}}
-                    {{--<a class="collapse-item" href="{{ route('admin.category') }}">Categories</a>--}}
-                    {{--<a class="collapse-item" href="{{ route('admin.tag') }}">Tags</a>--}}
-                    {{--<a class="collapse-item" href="{{ route('admin.post.trash') }}">Trash</a>--}}
-                {{--</div>--}}
-            {{--</div>--}}
-        {{--</li>--}}
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+               aria-expanded="true" aria-controls="collapseTwo">
+                <i class="fas fa-fw fa-table"></i>
+                <span>Blog</span>
+            </a>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                <div class="bg-white py-2 collapse-inner rounded">
+                    <a class="collapse-item" href="{{ route('admin.post') }}">Blog</a>
+                    <a class="collapse-item" href="{{ route('admin.category') }}">Categories</a>
+                    <a class="collapse-item" href="{{ route('admin.tag') }}">Tags</a>
+                    <a class="collapse-item" href="{{ route('admin.post.trash') }}">Trash</a>
+                </div>
+            </div>
+        </li>
 
         <!-- Nav Item - Pages Collapse Menu -->
         <li class="nav-item">

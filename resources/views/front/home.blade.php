@@ -46,7 +46,7 @@
                             {{$banner[0]->title}}
                         </h1>
                         <h3 style="position: absolute;z-index: 10;color: #fff;right: 0;bottom: 30%;width: 100%;font-family: 'Dancing Script', cursive;text-transform: uppercase;text-align: center;">
-                        this text this text this text this text this text
+                        {{$banner[0]->desc}}
                         </h3>
                         {{--<br><h2>{{$banner[0]->desc}}</h2>--}}
                     </li>
