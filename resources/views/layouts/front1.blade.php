@@ -35,7 +35,7 @@
 {{--</div>--}}
 <!-- sticky wahtsapp button -->
 <div class="whats">
-    <a href="https://wa.me/+971567672228" target="_blank"><i class="fa fa-whatsapp"></i></a>
+    <a href="https://wa.me/+971562040878" target="_blank"><i class="fa fa-whatsapp"></i></a>
 </div>
 <!--Site Wrapper-->
 <div class="vlt-site-wrapper">
