@@ -33,6 +33,7 @@
 					<!--Page Title Hero-->
 					<div class="vlt-page-title-hero vlt-page-title-hero--post vlt-page-title-hero--lg jarallax">
 						<div class="vlt-page-title-hero__overlay"></div>
+						<img class="jarallax-img" src="{{ asset('storage/'.$post->cover) }}" alt="">
 						<div class="vlt-page-title-hero__content">
 							<div class="container">
 								<div class="row">
@@ -95,8 +96,8 @@
 						<!--Also Like Posts 01-->
 						<div class="vlt-also-like-posts">
 							<div class="row">
-								<div class="col-md-4">
-									@foreach($post->category->posts->slice(0,3)  as $posts)
+							@foreach($post->category->posts->slice(0,3)  as $posts)
+								<div class="col-md-6">
 									<!--Blog Post-->
 									<article class="vlt-post filter-branding vlt-post--style-also-like">
 										<div class="vlt-post-thumbnail clearfix">
@@ -111,9 +112,10 @@
 											</header>
 										</div>
 									</article>
-									@endforeach
+									
 									<div class="vlt-gap-60--sm"></div>
 								</div>
+								@endforeach
 							</div>
 							<div class="vlt-gap-60"></div>
 						</div>
