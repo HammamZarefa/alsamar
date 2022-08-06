@@ -53,9 +53,7 @@
                     <div class="container">
                         <div class="vlt-navbar-inner">
                             <div class="vlt-navbar-inner--left">
-                                <!--Logo--><a class="vlt-navbar-logo" href="/"><img class="black"
-                                                                                    src="{{ asset('storage/'.$general->logo) }}"
-                                                                                    alt="" style="width: 100px;"><img
+                                <!--Logo--><a class="vlt-navbar-logo" href="/"><img class="black" src="{{ asset('storage/'.$general->logo) }}" alt="" style="width: 100px;"><img
                                             class="white" src="{{ asset('storage/'.$general->logo) }}" alt=""
                                             style="width: 100px;"></a>
                             </div>
@@ -68,8 +66,7 @@
                                             <li class="menu-item-has-children two-columns"><a
                                                         href="/"><span>@lang('Home')</span></a>
                                             </li>
-                                            <li class="menu-item-has-children"><a class="about-us"
-                                                                                  href="{{route('about')}}"><span>@lang('About')</span></a>
+                                            <li class="menu-item-has-children"><a class="about-us" href="{{route('about')}}"><span>@lang('About')</span></a>
                                                 <!-- <ul class="sub-menu">
                                                     <li><a class="d-flex justify-content-center" href="about-us.html"><span>About Us')</span></a>
                                                     </li>
@@ -81,6 +78,9 @@
                                                     <li><a class="d-flex justify-content-center" href="products.html"><span>@lang('Products')</span></a>
                                                     </li>
                                                 </ul> -->
+                                            </li>
+                                            <li class="menu-item-has-children"><a
+                                                        href="{{route('blog')}}"><span>@lang('Blog')</span></a>
                                             </li>
                                             <li class="menu-item-has-children"><a
                                                         href="{{route('contact')}}"><span>@lang('Contact Us')</span></a>
@@ -114,7 +114,8 @@
                                             src="{{ asset('storage/'.$general->logo) }}" alt=""
                                             style="width: 100PX;"></a>
                             </div>
-                            <div id="vlt-mobile-menu" class="col"><a class="vlt-menu-burger" href="#" id="vlt-mobile-menu-toggle"><span
+                            <div id="vlt-mobile-menu" class="col"><a class="vlt-menu-burger" href="#"
+                                                                     id="vlt-mobile-menu-toggle"><span
                                             class="line line-one"><span></span></span><span
                                             class="line line-two"><span></span></span><span
                                             class="line line-three"><span></span></span></a></div>
@@ -183,7 +184,7 @@
                                 <li><a href="{{route('about')}}">@lang('About Us')</a></li>
                                 <!--<li><a href="#">Our Services</a></li>-->
                                 <li><a href="{{route('products')}}">@lang('Products')</a></li>
-                                <!--<li><a href="#">News</a></li>-->
+                                <li><a href="{{route('blog')}}">@lang('Blog')</a></li>
                                 <li><a href="{{route('contact')}}">@lang('Contact Us')</a></li>
                                 <!--<li><a href="#">Shop</a></li>-->
                             </ul>
@@ -193,7 +194,8 @@
                         <!--Widget-->
                         <div class="vlt-widget vlt-widget--white vlt-widget-subscribe">
                             <h5 class="vlt-widget__title vlt-widget__title--white">@lang('Subscribe')</h5>
-                            <form class="vlt-subscribe-form1 vlt-subscribe-form--style-3" action="subscribe" method="get">
+                            <form class="vlt-subscribe-form1 vlt-subscribe-form--style-3" action="subscribe"
+                                  method="get">
                                 <div class="d-flex">
                                     <input type="email" placeholder="@lang('Your Email')" name="EMAIL">
                                     <button class="vlt-btn vlt-btn--primary vlt-btn--effect" type="submit">

@@ -267,3 +267,7 @@ background-color: #EEBC69;
 #vlt-mobile-menu{
 text-align: right;
 }
+#Contact{
+	z-index: 1;
+	min-height: 600px;
+}
