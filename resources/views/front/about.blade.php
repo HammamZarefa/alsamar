@@ -104,7 +104,7 @@
             </div>
             <div class="vlt-gap-120"></div>
         </section>        <!--Counter Up 02-->
-        <section class="jarallax" id="Message"><img class="jarallax-img" src="{{asset('front/img/attachment-04.jpg')}}" alt="">
+        <section class="jarallax" id="Message"><img class="jarallax-img" src="" alt="">
             <div class="jarallax-overlay" style="background-color: #eebc69;"></div>
             <div class="container">
                 <div class="row d-flex align-items-center">

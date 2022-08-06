@@ -1,7 +1,7 @@
 @extends('layouts.front')
 
 @section('title')
-Blog -
+@lang('Blog') -
 @php
     $no=0;
 @endphp
@@ -22,7 +22,7 @@ Blog -
 					<div class="vlt-gap-120"></div>
 					<div class="container">
 						<!--Large Heading-->
-						<h1 class="vlt-large-heading text-center text-white">Blog<span></span>
+						<h1 class="vlt-large-heading text-center text-white">@lang('Blog')<span></span>
 						</h1>
 					</div>
 					<div class="vlt-gap-120"></div>
@@ -73,7 +73,7 @@ Blog -
 
 									<!--Widget-->
 									<div class="vlt-widget vlt-widget-tag-cloud">
-										<h5 class="vlt-widget__title">Tags</h5>
+										<h5 class="vlt-widget__title">@lang('Tags')</h5>
 										<div class="tagcloud">
                                             @foreach ($tags as $tag)
                                                 <a href="{{ route('tag',$tag->slug) }}">{{ $tag->name }}</a>,

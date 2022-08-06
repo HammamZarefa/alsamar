@@ -8,10 +8,10 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Portolio</h2>
+          <h2>@lang('Products')</h2>
           <ol>
-            <li><a href="/">Home</a></li>
-            <li>Portolio</li>
+            <li><a href="/">@lang('Home')</a></li>
+            <li>@lang('Products')</li>
           </ol>
         </div>
 
@@ -25,7 +25,7 @@
         <div class="row" data-aos="fade-up">
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter="*" class="filter-active">@lang('All')</li>
               @foreach ($pcategories as $category)
               <li data-filter=".{{ $category->id }}">{{ $category->name }}</li>
               @endforeach

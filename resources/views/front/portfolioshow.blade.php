@@ -23,7 +23,7 @@
                             <!--Content-->
                             <div class="vlt-single-product-summary">
                                 <!--Breadcrumbs-->
-                                <nav class="vlt-shop-breadcrumbs"><a href="#">Home</a><span class="sep">-</span><a href="#">Products</a><span class="sep">-</span>Snacks</nav>
+                                <nav class="vlt-shop-breadcrumbs"><a href="#">@lang('Home')</a><span class="sep">-</span><a href="#">@lang('Products')</a><span class="sep">-</span>{{$portfolio->pcategory->name}}</nav>
                                 <!--Title-->
                                 <h1 class="vlt-shop-product-title">{{$portfolio->name}}</h1>
                                 <!--Rating-->

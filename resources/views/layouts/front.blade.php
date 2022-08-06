@@ -80,18 +80,17 @@
                                                 </ul> -->
                                             </li>
                                             <li class="menu-item-has-children"><a
-                                                        href="{{route('blog')}}"><span>@lang('Blog')</span></a>
+                                                        href="{{route('blog')}}"><span>@lang('Blogs')</span></a>
                                             </li>
                                             <li class="menu-item-has-children"><a
                                                         href="{{route('contact')}}"><span>@lang('Contact Us')</span></a>
                                             </li>
-                                            <li class="menu-item-has-children"><a href=""
-                                                                                  class="d-flex align-items-center"><i
+                                            <li class="menu-item-has-children"><a class="d-flex align-items-center"><i
                                                             class="fa fa-globe fa-2x"></i></a>
                                                 <ul class="sub-menu">
                                                     <li><a class="d-flex justify-content-center" href="locale/en"><span>English</span></a>
                                                     </li>
-                                                    <li><a class="d-flex justify-content-center" href="locale/ar"><span>Arabic</span></a>
+                                                    <li><a class="d-flex justify-content-center" href="locale/ar"><span>عربي</span></a>
                                                     </li>
                                                 </ul>
                                             </li>
@@ -184,7 +183,7 @@
                                 <li><a href="{{route('about')}}">@lang('About Us')</a></li>
                                 <!--<li><a href="#">Our Services</a></li>-->
                                 <li><a href="{{route('products')}}">@lang('Products')</a></li>
-                                <li><a href="{{route('blog')}}">@lang('Blog')</a></li>
+                                <li><a href="{{route('blog')}}">@lang('Blogs')</a></li>
                                 <li><a href="{{route('contact')}}">@lang('Contact Us')</a></li>
                                 <!--<li><a href="#">Shop</a></li>-->
                             </ul>
