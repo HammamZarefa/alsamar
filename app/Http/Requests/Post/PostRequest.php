@@ -28,10 +28,10 @@ class PostRequest extends FormRequest
             'title_en'=>'required',
             'category'=>'required',
 //            'cover'=>'required',
-            'body_ar'=>'required|min:2|max:255',
+            'body_ar'=>'required|min:2',
             'meta_desc_ar'=>'required',
             'keyword_ar'=>'required',
-            'body_en'=>'required|min:2|max:255',
+            'body_en'=>'required|min:2',
             'meta_desc_en'=>'required',
             'keyword_en'=>'required',
         ];

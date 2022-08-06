@@ -40,7 +40,7 @@
 </div>
 <!-- sticky wahtsapp button -->
 <div class="whats">
-    <a href="https://wa.me/+971567672228" target="_blank"><i class="fa fa-whatsapp"></i></a>
+    <a href="https://wa.me/+971562040878" target="_blank"><i class="fa fa-whatsapp"></i></a>
 </div>
 <!--Site Wrapper-->
 <div class="vlt-site-wrapper">
@@ -53,7 +53,9 @@
                     <div class="container">
                         <div class="vlt-navbar-inner">
                             <div class="vlt-navbar-inner--left">
-                                <!--Logo--><a class="vlt-navbar-logo" href="/"><img class="black" src="{{ asset('storage/'.$general->logo) }}" alt="" style="width: 100px;"><img
+                                <!--Logo--><a class="vlt-navbar-logo" href="/"><img class="black"
+                                                                                    src="{{ asset('storage/'.$general->logo) }}"
+                                                                                    alt="" style="width: 100px;"><img
                                             class="white" src="{{ asset('storage/'.$general->logo) }}" alt=""
                                             style="width: 100px;"></a>
                             </div>
@@ -66,7 +68,8 @@
                                             <li class="menu-item-has-children two-columns"><a
                                                         href="/"><span>@lang('Home')</span></a>
                                             </li>
-                                            <li class="menu-item-has-children"><a class="about-us" href="{{route('about')}}"><span>@lang('About')</span></a>
+                                            <li class="menu-item-has-children"><a class="about-us"
+                                                                                  href="{{route('about')}}"><span>@lang('About')</span></a>
                                                 <!-- <ul class="sub-menu">
                                                     <li><a class="d-flex justify-content-center" href="about-us.html"><span>About Us')</span></a>
                                                     </li>
@@ -135,13 +138,15 @@
                             <li class="menu-item-has-"><a
                                         href="{{route('products')}}"><span>@lang('Products')</span></a>
                             </li>
+                            <li class="menu-item-has-"><a href="{{route('blog')}}"><span>@lang('Blogs')</span></a>
+                            </li>
                             <li class="menu-item-has-"><a
                                         href="{{route('contact')}}"><span>@lang('Contact Us')</span></a>
                             </li>
-                            <li class="menu-item-has-children"><a href=""><i class="fa fa-globe fa-2x"></i></a>
+                            <li class="menu-item-has-children"><a ><i class="fa fa-globe fa-2x"></i></a>
                                 <ul class="sub-menu">
                                     <li><a href="locale/en"><span>English</span></a>
-                                    <li><a href="locale/en"><span>Arabic</span></a>
+                                    <li><a href="locale/ar"><span>عربي</span></a>
                                     </li>
                                 </ul>
                             </li>
@@ -248,54 +253,54 @@
 <script src="{{ asset('front/revolution/js/extensions/revolution.extension.video.min.js') }}"></script>
 
 <!--Google Maps-->
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDv_85HechLOo3Rf-AD8sXNMqIb-L5fVic"></script>
+{{--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDv_85HechLOo3Rf-AD8sXNMqIb-L5fVic"></script>--}}
 <script>
-    (function ($) {
+    {{--(function ($) {--}}
 
-        'use strict';
+        {{--'use strict';--}}
 
-        var isDraggable = $(document).width() > 641 ? true : true;
-        var position = new google.maps.LatLng(40.713669, -74.007266);
+        {{--var isDraggable = $(document).width() > 641 ? true : true;--}}
+        {{--var position = new google.maps.LatLng(40.713669, -74.007266);--}}
 
-        var map_options = {
-            center: position,
-            zoom: 10,
-            scaleControl: true,
-            streetViewControl: false,
-            mapTypeControl: false,
-            panControl: false,
-            zoomControl: false,
-            scrollwheel: false,
-            draggable: isDraggable
-        }
+        {{--var map_options = {--}}
+            {{--center: position,--}}
+            {{--zoom: 10,--}}
+            {{--scaleControl: true,--}}
+            {{--streetViewControl: false,--}}
+            {{--mapTypeControl: false,--}}
+            {{--panControl: false,--}}
+            {{--zoomControl: false,--}}
+            {{--scrollwheel: false,--}}
+            {{--draggable: isDraggable--}}
+        {{--}--}}
 
-        //inizialize the map
-        var map = new google.maps.Map(document.getElementById('map'), map_options);
+        {{--//inizialize the map--}}
+        {{--var map = new google.maps.Map(document.getElementById('map'), map_options);--}}
 
-        //add a custom marker to the map
-        var marker = new google.maps.Marker({
-            position: position,
-            map: map,
-            animation: google.maps.Animation.DROP,
-            icon: '{{asset("front/img/root/map-marker--blue.png")}}'
-        });
+        {{--//add a custom marker to the map--}}
+        {{--var marker = new google.maps.Marker({--}}
+            {{--position: position,--}}
+            {{--map: map,--}}
+            {{--animation: google.maps.Animation.DROP,--}}
+            {{--icon: '{{asset("front/img/root/map-marker--blue.png")}}'--}}
+        {{--});--}}
 
-        google.maps.event.addListener(marker, 'click', toggleBounce);
+        {{--google.maps.event.addListener(marker, 'click', toggleBounce);--}}
 
-        google.maps.event.addDomListener(window, 'resize', function () {
-            var center = map.getCenter();
-            google.maps.event.trigger(map, 'resize');
-            map.setCenter(center);
-        });
+        {{--google.maps.event.addDomListener(window, 'resize', function () {--}}
+            {{--var center = map.getCenter();--}}
+            {{--google.maps.event.trigger(map, 'resize');--}}
+            {{--map.setCenter(center);--}}
+        {{--});--}}
 
-        function toggleBounce() {
-            if (marker.getAnimation() != null) {
-                marker.setAnimation(null);
-            } else {
-                marker.setAnimation(google.maps.Animation.BOUNCE);
-            }
-        }
-    })(jQuery);
+        {{--function toggleBounce() {--}}
+            {{--if (marker.getAnimation() != null) {--}}
+                {{--marker.setAnimation(null);--}}
+            {{--} else {--}}
+                {{--marker.setAnimation(google.maps.Animation.BOUNCE);--}}
+            {{--}--}}
+        {{--}--}}
+    {{--})(jQuery);--}}
 </script>
 </body>
 
