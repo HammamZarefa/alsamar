@@ -27,7 +27,7 @@ Blog -
 					</div>
 					<div class="vlt-gap-120"></div>
 
-					<div class="d-flex justify-content-between align-items-center">
+					<!-- <div class="d-flex justify-content-between align-items-center">
 						@isset($category)
 							<h2>{{ __('home.blogcategory') }}: {{ $category->name }}</h2>
 						@endisset
@@ -44,7 +44,7 @@ Blog -
 							<li><a href="/">{{ __('home.home') }}</a></li>
 							<li>{{ __('home.blog') }}</li>
 						</ol>
-					</div>
+					</div> -->
 				</section>
 				<!--Content-->
 				<section>

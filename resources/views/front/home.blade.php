@@ -46,7 +46,7 @@
                             {{$banner[0]->title}}
                         </h1>
                         <h3 style="position: absolute;z-index: 10;color: #fff;right: 0;bottom: 30%;width: 100%;font-family: 'Dancing Script', cursive;text-transform: uppercase;text-align: center;">
-                        this text this text this text this text this text
+                        {{$banner[0]->desc}}
                         </h3>
                         {{--<br><h2>{{$banner[0]->desc}}</h2>--}}
                     </li>
@@ -245,39 +245,61 @@
             </div>
             <div class="vlt-gap-120"></div>
         </section>
-        	<!--&&&&&&&&&&&&&&&&&&&&&& STart Blog Home Page &&&&&&&&&&&&&&&&&&&& -->
-    <section>
-						<div class="container-fluid p-0">
-							<div class="row no-gutters">
-								<div class="col-sm-12">
-								<h3 style="color: #3c594f;text-align: center;padding-top: 20px;">@lang('Blog')</h3>
-								</div>
-								<div class="vlt-gap-120"></div>
-								<div class="col-md-3">
+        <!--&&&&&&&&&&&&&&&&&&&&&& STart blog  &&&&&&&&&&&&&&&&&&&& -->
+					<section style="background-color: #f7f7f7;">
+						<div class="vlt-gap-120"></div>
+						<div class="container position-relative">
+							<!--Particle-->
+							<div class="vlt-particle" data-jarallax-element="-100 0" style="top: 70px; left: calc(-160px - 15px); max-width: 250px;"><img src="{{asset('front/img/root/particle-01--black.png')}}" alt=""></div>
+							<!--Particle-->
+							<div class="vlt-particle" data-jarallax-element="100 0" style="top: 75px; right: calc(-75px + 15px); max-width: 150px;"><img src="{{asset('front/img/root/particle-002.png')}}" alt=""></div>
+							<div class="row">
+								<div class="col-md-6 offset-md-3">
 									<!--Animation Block-->
 									<div class="vlt-animation-block" data-aos="fade" data-aos-delay="0">
-                                       @foreach($lpost->slice(0,3)  as $post)
-										<!--Team Member-->
-										<div class="vlt-team-member vlt-team-member--style-2">
-											<div class="vlt-team-member__avatar"><img src="{{ asset('storage/'.$post->cover) }}" alt="">
-											</div>
-											<div class="vlt-team-member__info">
-												<h4>{{$post->tilte}}
-												</h4>
-                                                <p> {{ Str::limit( strip_tags( $post->body ), 250 ) }}</p>
-												<a href="{{route('blog')}}">
-													@lang('Read More')
-												</a>
-											</div>
+										<!--Section Title-->
+										<div class="text-center">
+											<h2 style="color: #3c594f">@lang('Blog')</h2>
 										</div>
 									</div>
-                                    @endforeach
+									<div class="vlt-gap-70"></div>
 								</div>
+							</div>
+							<div class="row">
+                            @foreach($lpost->slice(0,3)  as $post)
+								<div class="col-md-4">
+									<!--Animation Block-->
+									<div class="vlt-animation-block" data-aos="fade" data-aos-delay="0">
+										<!--Blog Post-->
+										<article class="vlt-post filter-branding vlt-post--style-masonry">
+											<div class="vlt-post-thumbnail clearfix">
+												<div class="vlt-fit-image" style="--size-md: 67.5%; --size-sm: 67.5%;"><img  src="{{ asset('storage/'.$post->cover) }}" alt=""></div><a class="vlt-post-thumbnail__link" href="blog-list.html"></a>
+											</div>
+											<div class="vlt-post-content">
+												<header class="vlt-post-header">
+													<h3 class="vlt-post-title"><a href="blog-list.html">{{$post->tilte}}</a></h3>
+													<div class="vlt-post-meta vlt-display-1"><span>26 November 2018</span><span>Branding</span>
+													</div>
+												</header>
+												<div class="vlt-post-excerpt">
+													<p>{{ Str::limit( strip_tags( $post->body ), 250 ) }}
+													</p>
+												</div>
+											</div>
+										</article>
+									</div>
+									<div class="vlt-gap-60--sm"></div>
+								</div>
+                                @endforeach
+							</div>
+							<div class="vlt-gap-70"></div>
+							<div class="text-center">
+								<!--Button--><a class="vlt-btn vlt-btn--primary vlt-btn--md vlt-btn--effect" href="{{route('blog')}}"><span>@lang('Read More')</span></a>
 							</div>
 						</div>
 						<div class="vlt-gap-120"></div>
 					</section>
-					<!--&&&&&&&&&&&&&&&&&&&&&& End Blog Home Page   &&&&&&&&&&&&&&&&&&&&7 -->
+					<!--&&&&&&&&&&&&&&&&&&&&&& end blog  &&&&&&&&&&&&&&&&&&&&7 -->
         <!--Contact Us 02-->
         <section id="Contact" class="jarallax"><img class="jarallax-img" src="{{asset('front/img/attachment-06.jpg')}}" alt="">
             <div class="jarallax-overlay" style="background-color: #3C594F;"></div>
