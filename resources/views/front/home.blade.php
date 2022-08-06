@@ -40,7 +40,7 @@
                             <!-- <div class="tp-caption" id="slide-5-layer-3" data-x="['right','right','right','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','bottom']" data-voffset="['0','0','0','0']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="off" data-responsive="off" data-frames="[{&quot;delay&quot;:&quot;+1240&quot;,&quot;speed&quot;:500,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:50px;opacity:0;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;opacity:0;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]" data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]" data-marginbottom="[0,0,0,0]" data-marginleft="[0,0,0,0]" data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 10; white-space: nowrap; font-size: 20px; line-height: 22px; font-weight: 400; color: #ffffff; letter-spacing: 0px;font-family:Open Sans;"><a class="vlt-btn vlt-btn--secondary vlt-btn--effect vlt-btn--lg" href="portfolio-01.html"><span>View Projects</span></a></div> -->
                         </div>
                         <!-- LAYER NR. 4-->
-                        <div class="tp-caption tp-resizeme rs-parallaxlevel-4" id="slide-5-layer-5" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-width="full-proportional" data-height="full-proportional" data-whitespace="nowrap" data-type="image" data-basealign="slide" data-responsive_offset="on" data-frames="[{&quot;delay&quot;:10,&quot;speed&quot;:300,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;opacity:0;&quot;,&quot;to&quot;:&quot;o:0.5;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;opacity:0;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]" data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 5;"><img src="{{asset('front/img/slider/homepage-05/01.jpg')}}" alt="" data-ww="['full-proportional','full-proportional','full-proportional','full-proportional']" data-hh="['full-proportional','full-proportional','full-proportional','full-proportional']" data-no-retina=""></div>
+                        <div class="tp-caption tp-resizeme rs-parallaxlevel-4" id="slide-5-layer-5" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-width="full-proportional" data-height="full-proportional" data-whitespace="nowrap" data-type="image" data-basealign="slide" data-responsive_offset="on" data-frames="[{&quot;delay&quot;:10,&quot;speed&quot;:300,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;opacity:0;&quot;,&quot;to&quot;:&quot;o:0.5;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;opacity:0;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]" data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 5;"><img src="" alt="" data-ww="['full-proportional','full-proportional','full-proportional','full-proportional']" data-hh="['full-proportional','full-proportional','full-proportional','full-proportional']" data-no-retina=""></div>
                         <!-- LAYER NR. 5-->
                         <h1 class="tp-caption" id="slide-5-layer-1" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-60','-60','-60','-100']" data-fontsize="['58','58','58','38']" data-lineheight="['70','70','70','50']" data-width="['501','501','501','430']" data-height="none" data-whitespace="normal" data-type="text" data-responsive_offset="off" data-responsive="off" data-frames="[{&quot;delay&quot;:500,&quot;speed&quot;:500,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:-50px;opacity:0;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;opacity:0;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]" data-textalign="['center','center','center','center']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 7; min-width: 501px; max-width: 501px; white-space: normal; font-size: 58px; line-height: 70px; font-weight: 700; color: #ffffff; letter-spacing: 0px;font-family: 'Dancing Script', cursive;text-transform:uppercase;">
                             {{$banner[0]->title}}
@@ -171,7 +171,7 @@
                 <div class="vlt-gap-120"></div>
             </section>
         </section>
-        <section id="Vlaues" class="jarallax"><img class="jarallax-img" src="{{asset('front/img/landing/leedo-pages-collage.jpg')}}" alt="">
+        <section id="Vlaues" class="jarallax"><img class="jarallax-img" src="" alt="">
             <div class="jarallax-overlay" style="background-color: #3c594f;"></div>
             <h3 style="color: #fff;text-align: center;padding-top: 20px;">@lang('Our Services')</h3>
             <div class="vlt-gap-60"></div>
@@ -194,7 +194,7 @@
             <div class="vlt-gap-120"></div>
         </section>
         <!--Counter Up 02-->
-        <section class="jarallax" id="Message"><img class="jarallax-img" src="{{asset('front/img/attachment-04.jpg')}}" alt="">
+        <section class="jarallax" id="Message"><img class="jarallax-img" src="" alt="">
             <div class="jarallax-overlay" style="background-color: #eebc69;"></div>
             <div class="container">
                 <div class="row d-flex align-items-center">
@@ -259,7 +259,7 @@
 									<div class="vlt-animation-block" data-aos="fade" data-aos-delay="0">
 										<!--Section Title-->
 										<div class="text-center">
-											<h2 style="color: #3c594f">@lang('Blog')</h2>
+											<h2 style="color: #3c594f">@lang('Blogs')</h2>
 										</div>
 									</div>
 									<div class="vlt-gap-70"></div>
@@ -273,12 +273,12 @@
 										<!--Blog Post-->
 										<article class="vlt-post filter-branding vlt-post--style-masonry">
 											<div class="vlt-post-thumbnail clearfix">
-												<div class="vlt-fit-image" style="--size-md: 67.5%; --size-sm: 67.5%;"><img  src="{{ asset('storage/'.$post->cover) }}" alt=""></div><a class="vlt-post-thumbnail__link" href="blog-list.html"></a>
+												<div class="vlt-fit-image" style="--size-md: 67.5%; --size-sm: 67.5%;"><img  src="{{ asset('storage/'.$post->cover) }}" alt=""></div><a class="vlt-post-thumbnail__link" href="{{route('blogshow',$post->slug)}}"></a>
 											</div>
 											<div class="vlt-post-content">
 												<header class="vlt-post-header">
-													<h3 class="vlt-post-title"><a href="blog-list.html">{{$post->tilte}}</a></h3>
-													<div class="vlt-post-meta vlt-display-1"><span>26 November 2018</span><span>Branding</span>
+													<h3 class="vlt-post-title"><a href="{{route('blogshow',$post->slug)}}">{{$post->tilte}}</a></h3>
+													<div class="vlt-post-meta vlt-display-1"><span>{{ Carbon\Carbon::parse($post->created_at)->format("d F, Y") }}</span><span>{{$post->category->name}}</span>
 													</div>
 												</header>
 												<div class="vlt-post-excerpt">
@@ -301,7 +301,7 @@
 					</section>
 					<!--&&&&&&&&&&&&&&&&&&&&&& end blog  &&&&&&&&&&&&&&&&&&&&7 -->
         <!--Contact Us 02-->
-        <section id="Contact" class="jarallax"><img class="jarallax-img" src="{{asset('front/img/attachment-06.jpg')}}" alt="">
+        <section id="Contact" class="jarallax"><img class="jarallax-img" src="" alt="">
             <div class="jarallax-overlay" style="background-color: #3C594F;"></div>
             <div class="vlt-gap-120"></div>
             <div class="container">

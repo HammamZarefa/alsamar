@@ -18,7 +18,7 @@
             <div class="vlt-gap-60"></div>
             <div class="container">
                 <div class="vlt-cubeportfolio-filters vlt-display-1" id="vlt-filter-portfolio-01">
-                    <div class="cbp-filter-item cbp-filter-item-active" data-filter="*">All</div>
+                    <div class="cbp-filter-item cbp-filter-item-active" data-filter="*">@lang('All')</div>
                     @foreach($pcategories as $pcategory)
                         <div class="cbp-filter-item" data-filter=".filter-{{$pcategory->id}}">{{$pcategory->name}}</div>
                     @endforeach
