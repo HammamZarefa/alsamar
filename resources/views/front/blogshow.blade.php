@@ -169,7 +169,7 @@
 				<!--Post Wrapper-->
 				<div class="vlt-single-post-wrapper vlt-single-post-wrapper--style-2" id="content">
 					<!--Particle-->
-					<div class="vlt-particle" data-jarallax-element="100 0" style="top: -30px; right: -40px; max-width: 250px;"><img src="assets/img/root/particle-01--black.png" alt=""></div>
+					<div class="vlt-particle" data-jarallax-element="100 0" style="top: -30px; right: -40px; max-width: 250px;"><img src="{{asset('front/img/root/particle-01--black.png')}}" alt=""></div>
 					<div class="container">
 						<!--Single Post-->
 						<article class="vlt-single-post">
@@ -208,7 +208,8 @@
 										</div>
 										<div class="col-md-6">
 											<!--Particle-->
-											<div class="vlt-particle" data-jarallax-element="100 0" style="top: -75px; right: calc(-75px + 15px); max-width: 150px;;"><img src="assets/img/root/particle-01--black.png" alt=""></div>
+											<div class="vlt-particle" data-jarallax-element="100 0" style="top: -75px; right: calc(-75px + 15px); max-width: 150px;;"><img src="
+											{{asset('front/img/root/particle-01--black.png')}}"  alt=""></div>
 											<!--Simple Image-->
 											<div class="vlt-simple-image">
 												<div class="vlt-fit-image" style="--size-md: 100%; --size-sm: 100%;"><img src="assets/img/blog-2.jpg" alt=""></div>
@@ -262,7 +263,7 @@
 									<article class="vlt-post filter-branding vlt-post--style-also-like">
 										<div class="vlt-post-thumbnail clearfix">
 											<div class="vlt-fit-image" style="--size-md: 67.5%; --size-sm: 67.5%;">
-											<img src="assets/img/food.jpg" alt=""></div><a class="vlt-post-thumbnail__link" href="single-post-01.html"></a>
+											<img src="{{asset('front/img/food.jpg')}}" alt=""></div><a class="vlt-post-thumbnail__link" href="single-post-01.html"></a>
 										</div>
 										<div class="vlt-post-content">
 											<header class="vlt-post-header">
@@ -319,7 +320,7 @@
 									<ul class="vlt-comments__list">
 										<!--Comment Item-->
 										<li class="vlt-comment-item">
-											<div class="vlt-comment-item__inner clearfix"><a class="vlt-comment-avatar" href="#"><img src="assets/img/root/food.jpg" alt="" style="width: 100px;height: 100px;"></a>
+											<div class="vlt-comment-item__inner clearfix"><a class="vlt-comment-avatar" href="#"><img src="{{asset('front/img/food.jpg')}}" alt="" style="width: 100px;height: 100px;"></a>
 												<div class="vlt-comment-content">
 													<div class="vlt-comment-header">
 														<h5>Harry Davidson</h5>
@@ -333,7 +334,7 @@
 											<ul class="children">
 												<!--Comment Item-->
 												<li class="vlt-comment-item">
-													<div class="vlt-comment-item__inner clearfix"><a class="vlt-comment-avatar" href="#"><img src="assets/img/root/food.jpg" alt="" style="width: 100px;height: 100px;"></a>
+													<div class="vlt-comment-item__inner clearfix"><a class="vlt-comment-avatar" href="#"><img src="{{asset('front/img/food.jpg')}}" alt="" style="width: 100px;height: 100px;"></a>
 														<div class="vlt-comment-content">
 															<div class="vlt-comment-header">
 																<h5>Jessica Reed</h5>
