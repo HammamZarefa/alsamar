@@ -284,6 +284,7 @@ class FrontController extends Controller
 
     public function category(Category $category)
     {
+        $about = About::find(1);
         $categories = Category::all();
         $general = General::find(1);
         $link = Link::orderBy('name','asc')->get();
@@ -291,7 +292,7 @@ class FrontController extends Controller
         $posts = $category->posts()->latest()->paginate(6);
         $recent = Post::orderBy('id','desc')->limit(5)->get();
         $tags = Tag::all();
-        return view ('front.blog',compact('categories','general','link','lpost','posts','recent','tags'));
+        return view ('front.blog',compact('categories','general','link','lpost','posts','recent','tags','about'));
 //        return response()->json([
 //            'status' => 'sucssess' ,
 //            'statusCode' => '200' ,
@@ -301,6 +302,7 @@ class FrontController extends Controller
 
     public function tag(Tag $tag)
     {
+        $about = About::find(1);
         $categories = Category::all();
         $general = General::find(1);
         $link = Link::orderBy('name','asc')->get();
@@ -308,7 +310,7 @@ class FrontController extends Controller
         $posts = $tag->posts()->latest()->paginate(12);
         $recent = Post::orderBy('id','desc')->limit(5)->get();
         $tags = Tag::all();
-        return view ('front.blog',compact('categories','general','link','lpost','posts','recent','tags'));
+        return view ('front.blog',compact('categories','general','link','lpost','posts','recent','tags','about'));
 //        return response()->json([
 //            'status' => 'sucssess' ,
 //            'statusCode' => '200' ,
@@ -318,7 +320,7 @@ class FrontController extends Controller
 
     public function search()
     {
-
+        $about = About::find(1);
         $query = request("query");
 
         $categories = Category::all();
@@ -329,7 +331,7 @@ class FrontController extends Controller
         $recent = Post::orderBy('id','desc')->limit(5)->get();
         $tags = Tag::all();
 
-        return view('front.blog',compact('categories','general','link','lpost','posts','query','recent','tags'));
+        return view('front.blog',compact('categories','general','link','lpost','posts','query','recent','tags','about'));
 //        return response()->json([
 //            'status' => 'sucssess' ,
 //            'statusCode' => '200' ,
@@ -383,7 +385,7 @@ class FrontController extends Controller
                 'phone_number' => $request->get('phone'),
                 'user_message' => $request->get('message'),
             ), function ($message) use ($request) {
-                $message->from($request->email);
+                $message->from(env('MAIL_FROM_ADDRESS'));
                 $message->to(env('MAIL_FROM_ADDRESS'));
             });
             return back()->with('success', 'Thank you for contact us!');
