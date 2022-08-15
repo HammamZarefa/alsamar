@@ -32,7 +32,7 @@
                         </div><a class="vlt-portfolio-item-overlay vlt-portfolio-item-overlay--align-center" href="{{route('portfolioshow',$portfolio->slug)}}" style="background-color:rgba(255,255,255,.8);">
                             <div class="vlt-portfolio-item-meta">
                                 <h4 class="vlt-portfolio-item-meta-title" style="color:#0b0b0b;">{{$portfolio->name}}
-                                </h4><span class="vlt-portfolio-item-meta-category vlt-display-1" style="color:#5c5c5c;">{{$portfolio->desc}}</span>
+                                </h4><span class="vlt-portfolio-item-meta-category vlt-display-1" style="color:#5c5c5c;">{{ Str::words($portfolio->desc, $limit = 20, $end = '...') }}</span>
                             </div>
                         </a>
                     </article>
