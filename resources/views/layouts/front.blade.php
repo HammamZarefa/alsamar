@@ -91,9 +91,9 @@
                                             <li class="menu-item-has-children"><a class="d-flex align-items-center"><i
                                                             class="fa fa-globe fa-2x"></i></a>
                                                 <ul class="sub-menu">
-                                                    <li><a class="d-flex justify-content-center" href="locale/en"><span>English</span></a>
+                                                    <li><a class="d-flex justify-content-center" href="{{route('locale','en')}}"><span>English</span></a>
                                                     </li>
-                                                    <li><a class="d-flex justify-content-center" href="locale/ar"><span>عربي</span></a>
+                                                    <li><a class="d-flex justify-content-center" href="{{route('locale','ar')}}"><span>عربي</span></a>
                                                     </li>
                                                 </ul>
                                             </li>
@@ -145,8 +145,8 @@
                             </li>
                             <li class="menu-item-has-children"><a ><i class="fa fa-globe fa-2x"></i></a>
                                 <ul class="sub-menu">
-                                    <li><a href="locale/en"><span>English</span></a>
-                                    <li><a href="locale/ar"><span>عربي</span></a>
+                                    <li><a href="{{route('locale','en')}}"><span>English</span></a>
+                                    <li><a href="{{route('locale','ar')}}"><span>عربي</span></a>
                                     </li>
                                 </ul>
                             </li>

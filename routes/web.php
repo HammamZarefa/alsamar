@@ -42,7 +42,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 // change language
-Route::get('locale/{locale?}', array('en'=>'set-locale', 'uses'=>'Languages\LanguageController@changeLang'));
+Route::get('locale/{locale?}', array('en'=>'set-locale', 'uses'=>'Languages\LanguageController@changeLang'))->name('locale');
 
 Route::get('/', [FrontController::class, 'home'])->name('home');
 

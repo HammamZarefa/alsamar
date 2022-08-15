@@ -151,7 +151,7 @@
                         @endforeach
                     </div>
                     <div id="vlt-grid-portfolio-01">
-                        @foreach($portfolios as $portfolio)
+                        @foreach($portfolios->slice(0,12) as $portfolio)
                         <!--Portfolio Item-->
                         <article class="vlt-portfolio-item vlt-portfolio-item--style-1 filter-{{$portfolio->pcategory_id}} cbp-item">
                             <div class="vlt-portfolio-item-img">
@@ -159,7 +159,7 @@
                             </div><a class="vlt-portfolio-item-overlay vlt-portfolio-item-overlay--align-center" href="{{route('portfolioshow',$portfolio->slug)}}" style="background-color:rgba(255,255,255,.8);">
                                 <div class="vlt-portfolio-item-meta">
                                     <h4 class="vlt-portfolio-item-meta-title" style="color:#0b0b0b;">{{$portfolio->name}}</h4>
-                                    <span class="vlt-portfolio-item-meta-category vlt-display-1" style="color:#5c5c5c;">{{$portfolio->desc}}</span>
+                                    <span class="vlt-portfolio-item-meta-category vlt-display-1" style="color:#5c5c5c;">{{ Str::words($portfolio->desc, $limit = 20, $end = '...') }}</span>
                                 </div>
                             </a>
                         </article>
@@ -245,7 +245,7 @@
             </div>
             <div class="vlt-gap-120"></div>
         </section>
-        <!--&&&&&&&&&&&&&&&&&&&&&& STart blog  &&&&&&&&&&&&&&&&&&&& -->
+        <!--&&&&&&&&&&&&&&&&&&&&&& Start blog  &&&&&&&&&&&&&&&&&&&& -->
 					<section style="background-color: #f7f7f7;">
 						<div class="vlt-gap-120"></div>
 						<div class="container position-relative">
